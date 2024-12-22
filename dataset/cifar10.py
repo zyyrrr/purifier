@@ -70,9 +70,6 @@ class LOAD_DATASET(Dataset):
             else:
                 self.data = imgs[datasize[db_idx]:datasize[db_idx+1]]
                 self.labels = labels[datasize[db_idx]:datasize[db_idx+1]]
-        elif db_idx == 5000: #用于near member实验
-            self.data = imgs[0:5000]
-            self.labels = labels[0:5000]
         # ----------------------------------
         # for training attack model(strong attack)
         # ----------------------------------
